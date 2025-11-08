@@ -1,0 +1,40 @@
+ Gradle
+
+Gradle combines Maven’s dependency management with Ant’s flexibility, using a Groovy or Kotlin-based DSL.
+It executes tasks, which can depend on each other.
+Each build script (build.gradle) defines plugins, repositories, dependencies, and custom tasks.
+
+Gradle supports incremental builds and build caching, making it much faster.
+
+📁 Typical Gradle Project Structure
+my-gradle-app/
+ ├── build.gradle
+ ├── settings.gradle
+ ├── src/
+ │   ├── main/java/com/example/App.java
+ │   └── test/java/com/example/AppTest.java
+ └── build/
+
+⚙️ Step-by-Step Implementation
+Step 1: Install Gradle
+sudo apt install gradle
+gradle -v
+
+Step 2: Create a Simple Project
+gradle init --type java-application
+
+Step 3: build.gradle file
+
+Step 4: Build and Run
+gradle build     # compiles, tests, and packages
+gradle run       # runs the app
+gradle test      # runs tests
+
+Gradle stores outputs in the build/ directory.
+
+🧠 In CI/CD
+In Jenkins or GCP Cloud Build:
+Artifacts from build/libs/ are uploaded to Artifact Registry or deployed via Cloud Run / GKE.
+
+Gradle is best for: modern projects, especially those using Kotlin, Android, or microservices that need faster, flexible builds.
+
