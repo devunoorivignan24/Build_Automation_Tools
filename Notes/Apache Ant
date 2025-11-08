@@ -1,0 +1,27 @@
+🧱 1️⃣ Apache Ant
+
+Ant is a task-based build system.
+You define targets (like "compile", "package", "deploy"), and each target executes a series of tasks (like javac, jar, copy).
+It’s similar to writing a Makefile in XML.
+
+Ant does not assume any project structure or lifecycle — you must explicitly tell it what to do and in what order.
+
+📁 Typical Ant Project Structure
+my-ant-app/
+ ├── build.xml
+ ├── src/
+ │    └── com/example/HelloWorld.java
+ ├── build/
+ └── lib/
+
+⚙️ Step-by-Step Implementation
+Step 1: Install Ant
+Step 2: Create build.xml
+Step 3: Run Ant Commands
+Step 4: Output
+
+🧠 In CI/CD
+In Jenkins or GCP Cloud Build:
+The generated .jar file can be uploaded to Artifact Registry and deployed.
+
+Ant is best used for: legacy Java projects or when you want full control over every build step.
